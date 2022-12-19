@@ -1,0 +1,28 @@
+<div class="root">
+    <div class="navbar">
+        <div class="navbar-brand">
+            <div class="navbar-item">
+                <h1 class="app-name has-gradient-text">Drag & Drop</h1>
+                 
+            </div>
+        </div>
+    </div>
+    <div class="column" cdkDropListGroup>
+    <div class="column1" *ngFor="let column of board.columns">
+    
+
+        <div class="column-title">
+            {{column.name}}
+        </div>
+      <div class="tasks-container"    
+      cdkDropList
+      [cdkDropListData]="column.tasks"
+      (cdkDropListDropped)="drop($event)">
+  
+        <div class="task" *ngFor="let item of column.tasks" cdkDrag>
+            {{ item }}
+        </div>
+      </div>
+    </div>
+    </div>
+</div>

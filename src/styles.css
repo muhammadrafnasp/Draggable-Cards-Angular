@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Kenia&family=Poppins:ital@0;1&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+
+}
+html, body{  
+    height: 100%;
+    margin: 0;
+}
+
+html{
+    background-image: url('./assets/gradient-green-blue-simple-background-turquise-texture-android-iphone-hd-wallpaper-background-downloadhd-wallpapers-desktop-background-android-iphone-1080p-4k-mcc3z.webp');
+    background-size: cover;
+    overflow-y: auto !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
